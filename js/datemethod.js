@@ -106,6 +106,9 @@ console.log(Math.pow(3,5));
 console.log(Math.random());
 
 
+// console.log(Math.random());
+
+
 
 
 
