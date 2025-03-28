@@ -90,20 +90,34 @@
 // console.log(d);
 
 
+let text;
+const today = new Date();
+const someday = new Date();
+
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+
+
+
 let x = 16.958;
 
 console.log(Math.floor(x));
-console.log(Math.ceil(x));
-console.log(Math.round(x));
-console.log(Math.trunc(x));
+// console.log(Math.ceil(x));
+// console.log(Math.round(x));
+// console.log(Math.trunc(x));
 
-console.log(Math.sign(-4));
+// console.log(Math.sign(-4));
 
-console.log(Math.pow(3,5));
+// console.log(Math.pow(3,5));
 
-// 3*3*3*3*3
+// // 3*3*3*3*3
 
-console.log(Math.random());
+// console.log(Math.random());
 
 
 // console.log(Math.random());
