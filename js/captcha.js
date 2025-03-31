@@ -21,6 +21,8 @@ function handleonsubmit(){
     
 
     // console.log(ans);
+    console.log();
+    
 
     
     
