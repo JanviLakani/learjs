@@ -117,7 +117,7 @@ console.log(Math.floor(x));
 
 // // 3*3*3*3*3
 
-// console.log(Math.random());
+console.log(Math.random());
 
 
 // console.log(Math.random());
