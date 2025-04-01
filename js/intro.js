@@ -12,7 +12,7 @@
 
 // alert(age);
     
-// const name = parseInt(prompt("please enter your name"))
+const name = parseInt(prompt("please enter your name"))
 // const age =parseInt(prompt("please enter you age"))
 
 // console.log(name);

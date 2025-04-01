@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ff2323;
+            font-size: 25vh;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            user-select: none;
+            color: rgba(0, 0, 0,1);
+        
+        }
+
+        .selectcolor{
+            position: relative;
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 200px;
+            border-radius: 4px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+            border-right: 10px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    
+   <section>
+    <div class="bg">red</div>
+
+
+        <select class="selectcolor" onchange="changecolor(this)">
+            <option value="#E9967A">selsect country</option>
+            <option value="#FFBF00">polend</option>
+            <option value="#6495ED">America</option>
+            <option value="#DE3163">italy</option>()
+            <option value="#DE3163">germany</option>
+            <option value="#800080">uk</option>
+        </select>
+    
+    
+   </section>
+    
+
+    <script src="js/dropdown.js"></script>
+</body>
+</html>

@@ -106,8 +106,8 @@ if (someday > today) {
 
 let x = 16.958;
 
-console.log(Math.floor(x));
-// console.log(Math.ceil(x));
+// console.log(Math.floor(x));
+console.log(Math.ceil(x));
 // console.log(Math.round(x));
 // console.log(Math.trunc(x));
 
@@ -117,7 +117,7 @@ console.log(Math.floor(x));
 
 // // 3*3*3*3*3
 
-console.log(Math.random());
+// console.log(Math.random());
 
 
 // console.log(Math.random());
