@@ -13,4 +13,6 @@ if (per >= 91 && per <= 100) {
 console.log(per);
 // console.log(grade);
 
+
+
 document.getElementById("grade").innerHTML=grade

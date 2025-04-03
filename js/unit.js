@@ -18,3 +18,5 @@ if (unit >= 0 && unit <= 50 ){
 finalbill=bill+(bill*0.20);
 
 console.log(finalbill);
+
+

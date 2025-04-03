@@ -20,3 +20,5 @@ if (salary < 10000)  {
 } else {
     console.log("you are not aligible in bonus")
 }
+
+
