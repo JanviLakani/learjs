@@ -4,7 +4,7 @@ function handlesubmit() {
     let selectcountry =document.getElementById("selector").value;
 
     if (selectcountry =='country') {
-        alert ("please enter select country ");
+        alert ("please select country ");
         return false;
     } else {
         return true;
