@@ -74,12 +74,12 @@
 // }
 
 function onfocus1(){
-    // console.log("focus");
+    console.log("focus");
     
     document.getElementById("focus").style.backgroundColor="red";
     document.getElementById("focus").style.color="pink";
     document.getElementById("focus").style.textTransform="uppercase";
-    // document.getElementById("focus").style.textTransform="lowercase";
+    document.getElementById("focus").style.textTransform="lowercase";
 
 
 }
@@ -94,67 +94,67 @@ function onfocus1(){
 
 
 
-function onblur1(){
-    document.getElementById("focus").style.backgroundColor="pink";
+// function onblur1(){
+//     document.getElementById("focus").style.backgroundColor="pink";
 
-}
+// }
 
-function handleonchange() {
-    const uk =document.getElementById("Country").value;
-    console.log(uk);
+// function handleonchange() {
+//     const uk =document.getElementById("Country").value;
+//     console.log(uk);
     
-}
+// }
 
-function handlesubmit(){
-    event.preventDefault();
-    const a =document.getElementById("focus").value;
-    const b =document.getElementById("Country").value;
-    console.log(a,b);
+// function handlesubmit(){
+//     event.preventDefault();
+//     const a =document.getElementById("focus").value;
+//     const b =document.getElementById("Country").value;
+//     console.log(a,b);
     
       
-}
+// }
 
-let mywindow;
+// let mywindow;
 
-function openwindow() {
+// function openwindow() {
     
-    mywindow = window.open("http://www.google.com","","width=200px,height=200px,left=300px,top=200px");
-}
+//     mywindow = window.open("http://www.google.com","","width=200px,height=200px,left=300px,top=200px");
+// }
 
-function closewindow(){
-    mywindow.close();
-}
-
-
-function resizewindow() {
-    mywindow.resizeby("width=250px, height=250px")
-}
+// function closewindow(){
+//     mywindow.close();
+// }
 
 
-// ************************************* 
+// function resizewindow() {
+//     mywindow.resizeby("width=250px, height=250px")
+// }
 
-function handlewindow() {
-    console.log("onload event window");
+
+// // ************************************* 
+
+// function handlewindow() {
+//     console.log("onload event window");
     
-}
+// }
 
-window.onload=handlewindow();
+// window.onload=handlewindow();
 
-function handleonunload(){
-    console.log("unload");
+// function handleonunload(){
+//     console.log("unload");
     
-}
+// }
 
-window.onunload=handleonunload;
+// window.onunload=handleonunload;
 
 
 
-function handleonresize() {
-    console.log(window.innerHeight,window.innerWidth);
+// function handleonresize() {
+//     console.log(window.innerHeight,window.innerWidth);
     
-}
+// }
 
-window.onresize=handleonresize
+// window.onresize=handleonresize
 
 
 

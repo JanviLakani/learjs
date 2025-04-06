@@ -12,7 +12,7 @@
 
 // alert(age);
     
-const name = parseInt(prompt("please enter your name"))
+// const name = parseInt(prompt("please enter your name"))
 // const age =parseInt(prompt("please enter you age"))
 
 // console.log(name);
@@ -21,10 +21,11 @@ const name = parseInt(prompt("please enter your name"))
 
 
 const age = parseInt(prompt("please enter your age"));
-const userName = prompt("please enter your name");
+
+// const userName = prompt("please enter your name");
 
 
 document.getElementById("demo").innerHTML =age;
-document.getElementById("demo1").innerHTML=userName;
+// document.getElementById("demo1").innerHTML=userName;
 
 

@@ -33,7 +33,7 @@ function handletretment() {
   console.log(tretment1, seating);
   console.log(costing);
 
-  let print = ``;
+  let print = "";
 
   if (clean !== "st") {
     print = `
@@ -61,9 +61,39 @@ function handletretment() {
 
 
 
+
+
+
+// console.log(print);
+
+// document.getElementById("money").innerHTML=print;
+
+
 // ***************************************************** 
 
 
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& 
+
+
+  // let print= `
+
+  //    <table border>
+  //     <tr>
+  //         <th>treatment</th>
+  //         <th>seating</th>
+  //         <th>costing</th>
+  //     </tr>
+
+  // `;
+
+  // print += `<tr>`
+  // print += `<td>${treatment1}</td>`
+  // print += `<td>${seating}</td>`
+  // print += `<td>${costing}</td>`
+  // print += `</tr>`
+
+
+  // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& 
 
 
 
