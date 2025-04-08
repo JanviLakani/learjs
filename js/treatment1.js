@@ -98,8 +98,49 @@ function handletretment() {
 
 
 
+// (((((((((((((((((((((((((((((((((((((((res))))))))))))))))))))))))))))))))))))))) 
 
 
+// const totalprice;
+
+
+
+// let foodbox="";
+
+// let print = `
+
+// <table>
+// <tr>
+//     <th>foodname</th>
+//     <th>quantity</th>
+//     <th>price</th>
+// </tr>
+// </table>
+
+
+// `; if (food != 0 && food_quantity != 0) {
+//     if (food == 500) {
+//         foodbox= "pizza"
+//     } else if (food ==100 ) {
+//         foodbox="burger"
+//     } else if (food == 50) {
+//         foodbox="bread batter"
+//     }
+//     print += `<tr>`
+    
+//     print += `<td>${food}</td>`
+//     print += `<td>${quantity}</td>`
+//     print += `<td>${food*food_quantity}</td>`
+    
+//     print +=  `</tr>`;
+
+//     document.getElementById("boxid").innerHTML=print;
+
+
+// }
+
+
+// const totalprice=food*food_quantity + fries*fries_quantity + colddrink_quantity*drink_type
 
 
 
