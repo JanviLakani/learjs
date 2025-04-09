@@ -94,13 +94,15 @@ function handlesubmit( ){
 
 // let pcram=document.getElementsByName("ram");
 
+let errorbox=false;
+
 
 // ************************************************************************ 1 
 let pcprocessor=document.getElementsByName("processor");
 
 let pcprocessorvalue=[];
 
-for (i=0; i<pcprocessor.length; i++) {
+for (let i=0; i<pcprocessor.length; i++) {
     if(pcprocessor[i].checked)
         pcprocessorvalue.push(pcprocessor[i].value);
         console.log(pcprocessorvalue);
@@ -110,6 +112,7 @@ for (i=0; i<pcprocessor.length; i++) {
 // let blockerror=false;
 if (pcprocessorvalue == "") {
     document.getElementById("pcerror").innerHTML="select processor";
+    errorbox=true;
     // blockerror=true;
 } else {
      document.getElementById("pcerror").innerHTML="";
@@ -125,7 +128,7 @@ let pcram=document.getElementsByName("ram");
 
 let pcramvalue=[];
 
-for (i=0; i<pcram.length; i++) {
+for (let i=0; i<pcram.length; i++) {
     if (pcram[i].checked)
         pcramvalue.push(pcram[i].value);
         console.log(pcramvalue);       
@@ -133,6 +136,7 @@ for (i=0; i<pcram.length; i++) {
 
 if (pcramvalue == "") {
     document.getElementById("ramerror").innerHTML="select pcram"
+    errorbox=true;
 } else {
     document.getElementById("ramerror").innerHTML=""
 }
@@ -147,7 +151,7 @@ let pcmemory=document.getElementsByName("memory");
 
 let pcmemoryvalue=[];
 
-for (i=0; i<pcmemory.length; i++) {
+for (let i=0; i<pcmemory.length; i++) {
     if (pcmemory[i].checked)
         pcmemoryvalue.push(pcmemory[i].value)
         console.log(pcmemoryvalue);
@@ -156,6 +160,7 @@ for (i=0; i<pcmemory.length; i++) {
 
 if (pcmemoryvalue == "") {
     document.getElementById("memoryerror").innerHTML="select memory";
+    errorbox=true;
 } else {
      document.getElementById("memoryerror").innerHTML="";
     //  console.log(memoryerror);
@@ -170,7 +175,7 @@ let pcgraphicscard=document.getElementsByName("graphicscard");
 
 let graphicscardvalue=[];
 
-for (i=0; i<pcgraphicscard.length; i++) {
+for (let i=0; i<pcgraphicscard.length; i++) {
     if (pcgraphicscard[i].checked) 
         graphicscardvalue.push(pcgraphicscard[i].value) 
         // console.log(graphicscardvalue);
@@ -179,8 +184,33 @@ for (i=0; i<pcgraphicscard.length; i++) {
 
 if (graphicscardvalue == "") {
     document.getElementById("graphicscarderror").innerHTML="select graphics card";
+    errorbox=true;
 } else {
     document.getElementById("graphicscarderror").innerHTML="";
+}
+
+if ( ! errorbox) {
+    // console.log("table print");
+    let pctype;
+
+    if (pcprocessorvalue<=10000) {
+        pctype="student pc;"
+    } else if (pcprocessorvalue >=15000 && pcprocessorvalue <=20000 ) { 
+        if (pcramvalue >= 1000) {
+            pctype="profectional pc"
+        } else {
+            pctype="stdent pc"
+        }
+
+    } else if (pcprocessorvalue >= 20000 && pcramvalue >= 2000 && pcmemoryvalue >= 5000 && graphicscardvalue >= 8000 ) {
+        pctype="gaming pc"
+    } else {
+        pctype="profectional pc"
+    }
+    
+} else{
+    console.log("table not print ");
+    
 }
 
 
