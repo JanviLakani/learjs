@@ -190,28 +190,89 @@ if (graphicscardvalue == "") {
 }
 
 if ( ! errorbox) {
-    // console.log("table print");
+    console.log("table print");
     let pctype;
 
-    if (pcprocessorvalue<=10000) {
-        pctype="student pc;"
-    } else if (pcprocessorvalue >=15000 && pcprocessorvalue <=20000 ) { 
-        if (pcramvalue >= 1000) {
-            pctype="profectional pc"
-        } else {
-            pctype="stdent pc"
-        }
+    // if (pcprocessorvalue<=10000) {
+    //     pctype="student pc"
+    // } else if (pcprocessorvalue >=15000 && pcprocessorvalue <=20000 ) { 
+    //     if (pcramvalue >= 1000) {
+    //         pctype="profectional pc"
+    //     } else {
+    //         pctype="stdent pc"
+    //     }
 
-    } else if (pcprocessorvalue >= 20000 && pcramvalue >= 2000 && pcmemoryvalue >= 5000 && graphicscardvalue >= 8000 ) {
-        pctype="gaming pc"
+    // } else if (pcprocessorvalue >= 20000 && pcramvalue >= 2000 && pcmemoryvalue >= 5000 && graphicscardvalue >= 8000 ) {
+    //     pctype="gaming pc"
+    // } else {
+    //     pctype="profectional pc"
+    // }
+
+    // if (pcprocessorvalue <= 10000 && pcramvalue <= 500 && pcmemoryvalue <= 2500 && graphicscardvalue <=0) {
+    //     pctype="student pc";
+    // } else {
+    //     pctype="";
+    // }
+
+    // console.log(pctype);
+   
+    // if  (pcprocessorvalue >= 15000 && pcramvalue >=1000 && pcmemoryvalue >= 2500 && graphicscardvalue <=0) {
+    //     pctype= "professional pc";
+    // } else {
+    //     pctype="student pc1111";
+    // }
+    //  console.log(pctype);
+
+    // if (pcprocessorvalue >= 20000 && pcramvalue >= 2000 && pcmemoryvalue >= 5000 && graphicscardvalue >=8000 ){
+    //     pctype= "gaming pc"
+        
+        
+    // } else {
+    //      pctype= "professional pc";
+    //      console.log(pctype);
+    // }
+
+    // console.log(pctype);
+
+    if (pcprocessorvalue <= 10000) {
+        pctype="student pc"
     } else {
-        pctype="profectional pc"
+        if (pcprocessorvalue >= 8000) {
+            
+        }
     }
+        
+    
+    
     
 } else{
     console.log("table not print ");
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
