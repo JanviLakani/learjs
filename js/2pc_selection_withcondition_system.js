@@ -100,11 +100,11 @@ let errorbox=false;
 // ************************************************************************ 1 
 let pcprocessor=document.getElementsByName("processor");
 
-let pcprocessorvalue=[];
+let pcprocessorvalue=0;
 
 for (let i=0; i<pcprocessor.length; i++) {
     if(pcprocessor[i].checked)
-        pcprocessorvalue.push(pcprocessor[i].value);
+        pcprocessorvalue=parseInt(pcprocessor[i].value);
         console.log(pcprocessorvalue);
     
 }
@@ -126,11 +126,11 @@ if (pcprocessorvalue == "") {
 let pcram=document.getElementsByName("ram");
 
 
-let pcramvalue=[];
+let pcramvalue=0;
 
 for (let i=0; i<pcram.length; i++) {
     if (pcram[i].checked)
-        pcramvalue.push(pcram[i].value);
+        pcramvalue=parseInt(pcram[i].value);
         console.log(pcramvalue);       
 }
 
@@ -149,11 +149,11 @@ if (pcramvalue == "") {
 let pcmemory=document.getElementsByName("memory");
 
 
-let pcmemoryvalue=[];
+let pcmemoryvalue=0;
 
 for (let i=0; i<pcmemory.length; i++) {
     if (pcmemory[i].checked)
-        pcmemoryvalue.push(pcmemory[i].value)
+        pcmemoryvalue = parseInt(pcmemory[i].value) 
         console.log(pcmemoryvalue);
         
 }
@@ -173,11 +173,11 @@ let pcgraphicscard=document.getElementsByName("graphicscard");
 
 
 
-let graphicscardvalue=[];
+let graphicscardvalue=0;
 
 for (let i=0; i<pcgraphicscard.length; i++) {
     if (pcgraphicscard[i].checked) 
-        graphicscardvalue.push(pcgraphicscard[i].value) 
+        graphicscardvalue=parseInt(pcgraphicscard[i].value) 
         console.log(graphicscardvalue);
         
 }
@@ -282,6 +282,9 @@ if ( ! errorbox) {
 
 
         console.log(pctype);
+
+        console.log(pcprocessorvalue,pcramvalue,pcmemoryvalue,graphicscardvalue);
+        
 
         let total=pcprocessorvalue+pcramvalue+pcmemoryvalue+graphicscardvalue;
 
