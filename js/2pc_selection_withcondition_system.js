@@ -163,7 +163,7 @@ if (pcmemoryvalue == "") {
     errorbox=true;
 } else {
      document.getElementById("memoryerror").innerHTML="";
-    //  console.log(memoryerror);
+     console.log(memoryerror);
      
 }
 
@@ -178,7 +178,7 @@ let graphicscardvalue=[];
 for (let i=0; i<pcgraphicscard.length; i++) {
     if (pcgraphicscard[i].checked) 
         graphicscardvalue.push(pcgraphicscard[i].value) 
-        // console.log(graphicscardvalue);
+        console.log(graphicscardvalue);
         
 }
 
@@ -234,13 +234,60 @@ if ( ! errorbox) {
 
     // console.log(pctype);
 
-    if (pcprocessorvalue <= 10000) {
-        pctype="student pc"
-    } else {
-        if (pcprocessorvalue >= 8000) {
-            
+    // if (pcprocessorvalue <= 10000) {
+    //     pctype="student pc"
+    // } else if (pcprocessorvalue >= 15000 && pcprocessorvalue < 20000) {
+    //     if (pcramvalue >= 1000) {
+    //         pctype= "professional pc";
+    //     } else {
+    //          pctype="student pc"
+    //     }
+    // } else if (pcprocessorvalue >= 20000) {
+    //     if (pcramvalue >= 1500 && pcmemoryvalue >= 5000 && graphicscardvalue > 0)  {
+    //         pctype= "gaming pc"
+    //     } else {
+    //         pctype= "professional pc";
+    //     }
+    // }
+
+
+
+
+
+
+    // pcprocessorvalue
+    // pcramvalue
+    // pcmemoryvalue
+    // graphicscardvalue
+
+
+
+
+    if (pcprocessorvalue <=10000) {
+        pctype="stdent pc"
+    } else if (pcprocessorvalue >=15000 && pcprocessorvalue < 20000) {
+        if (pcramvalue >= 1000 ) {
+            pctype="professional pc"
+        } else {
+            pctype-"student pc"
+        }
+    } else if (pcprocessorvalue >= 20000) {
+        if (pcramvalue >= 2000 && pcmemoryvalue >= 5000 && graphicscardvalue > 0 ) {
+            pctype='gaming pc'
+        } else {
+            pctype="professional pc"
         }
     }
+
+
+
+        console.log(pctype);
+
+        let total=pcprocessorvalue+pcramvalue+pcmemoryvalue+graphicscardvalue;
+
+        document.getElementById("money").innerHTML=total;
+
+        document.getElementById("type").innerHTML=pctype;
         
     
     
