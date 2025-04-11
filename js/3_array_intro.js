@@ -1,4 +1,7 @@
 
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
 // //1  NORMAL FUNCTION
 // function greeting(v) {
 //     console.log("hello janvi",v);
@@ -111,6 +114,8 @@
                        // ans 55  jo compare ma bov moti value hoi ne e arr na ho to return undefined karshe
 // console.log(ans);
 
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  
+
 //////////////////////////////////////////////////////////////////////
 
 /// H.W  11-04-2025 ///
@@ -173,7 +178,7 @@
 //indexOf()
 
 // let fruit = ["mango" , "chiku" , "apple" , "chiku" , "peru"] 
-// const ans =fruit.indexOf("chiku",2);
+// const ans =fruit.indexOf("chiku" ,2);
 // console.log(ans);             // return first occurence index
 
 
@@ -181,9 +186,9 @@
 
 //lastindexOf()
 
-let cloth = [ "dres" , "kurta" ,"plaza", "anarkali" ,"shrara" ,"top" ];
-const ans =cloth.lastIndexOf("plaza")
-console.log(ans);
+// let cloth = [ "dres" , "kurta" ,"plaza", "anarkali" ,"shrara" ,"top" ];
+// const ans =cloth.lastIndexOf("plaza")
+// console.log(ans);
                              //// return last occurence index
 
 
@@ -306,6 +311,253 @@ console.log(ans);
 //     console.log(age>20);
     
 // })
+
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ class 11-04-2025
+
+//////////////////////////////////////////////////////////////
+
+// slice
+
+// return part of the array minus index -1 start form last element
+
+// let arr = [10,30,40,70,60,70];
+
+// const ans =arr.slice(2,4)
+
+// console.log(arr ,ans);
+
+
+//////////////////////////////////////////////////////////////
+
+// map 
+
+// Iteration (visit each element) , return new array after any updation
+
+// let arr = [10,20,30,40,50,50,70];
+
+// const ans= arr.map((v,i) => v+5 )
+// const ans =arr.map((v,i) => {})     /// return undefined
+
+// console.log(arr ,ans);
+
+/////////////////////////////////////////////////////////////////
+
+// filter 
+
+// return array of element who passed condition  ,
+//  give empty array when condition is not true for all element
+
+// let arr = [10,20,30,60,89,999]
+
+// const ans =arr.filter((v,i) => v>5000 && v>100)
+
+// console.log(arr,ans);
+
+
+////////////////////////////////////////////////////////////////
+
+
+// reduce 
+
+// return accmator value after doing oparations
+// three parameter ni need apdshe reduse ma 
+
+// let arr = [10,20,30,60,89,999]
+// const ans=arr.reduce((acc ,v ,i) => i%2 === 0 ? acc+v : acc+0 , 0)  // ans 129 and index even index
+// const ans =arr.reduce((acc,v,i) => acc+v) // ans 1208 value no total
+
+// console.log(arr,ans);  
+
+
+//////////////////////////////////////////////////////////////
+
+
+
+// indexOf();
+
+// return index of first occurence of element 
+
+
+// let arr = [10,30,40,70,60,40,70];
+
+// const ans =arr.indexOf(40,3);
+
+// console.log(arr,ans);
+
+//////////////////////////////////////////////////////////////
+
+// lastindexOf()
+
+// return index of last occurence of element 
+
+
+// let arr = [10,30,40,70,60,70,40,70];
+
+// const ans=arr.lastIndexOf(40)
+
+// console.log(arr ,ans);
+
+
+////////////////////////////////////////////////////////////
+
+// every 
+
+// return boolen and give true if given condition true of all element 
+
+// let arr = [10,20,30,60,89,999]
+
+// const ans=arr.every((v,i) => v>99)
+
+// console.log(arr,ans);
+
+///////////////////////////////////////////////////////////////
+
+// findindex 
+
+// return index of first correct condition of element's index
+
+// let arr = [10,20,30,60,89,999];
+// const ans =arr.findIndex((v ,i) =>  v>55)
+
+// console.log(ans);
+
+
+//////////////////////////////////////////////////////////////
+
+
+// fill
+
+// return array with filled element  
+// jm ke me fill ma 99 mukyu to all element 99 retuirn karshe 
+
+
+// let arr = [10,20,30,60,89,999];
+
+// const ans =arr.fill(9999 ,3);
+
+// console.log(ans);
+
+
+////////////////////////////////////////////////////////////////
+
+// sort  in string like name 
+
+ /// most use in 
+
+ // sort string array property
+
+//  let arr =["janvi" ,"mansi" ,"bhumi "]
+
+//  const ans =arr.sort();
+
+//  console.log(ans);
+
+// ************************************
+
+// sort use in number array 
+
+//  but jo number hoi to number na first letter thi jova nu shru karshe so 
+
+//   let arr = [10,20,30,60,89,999];
+  
+//   const ans=arr.sort((a,b) => a+b);
+//   const ans=arr.sort((a,b) => a-b);
+
+// sort na use ma jyare number valo array hoi tyare ganatari 
+// kari ne samajvu k kai rite ans aaviyo 
+
+//   console.log(ans);
+
+
+// /////////////////////////////////////////////////////
+
+// reverse 
+
+// return reverse aaray 
+
+
+// let arr =[50,89,80,70];
+
+// const ans =arr.reverse()
+
+// console.log(ans);
+
+
+////////////////////////////////////////////////////////
+
+
+
+// concat
+
+// return array of combine tro or more array 
+
+// let arr = [10,20,30];
+// let arr1 = ["janvi" ,"bansi" ,"nijal"]
+
+// const ans=arr.concat(arr1);
+
+// console.log(ans);
+
+
+/////////////////////////////////////////////////////////
+
+
+// isArray
+
+// return boolean  , check passed value is array or not
+
+// let arr= [10,20];
+// let arr= 100;
+
+// const ans=Array.isArray(arr)
+// console.log(ans);
+
+
+///////////////////////////////////////////////////////////
+
+
+// tostring 
+
+// return string 
+
+// let arr = [10,20,30,40,50];
+
+// const ans =arr.toString();
+
+// console.log(ans);
+
+//////////////////////////////////////////////////////
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
