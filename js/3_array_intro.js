@@ -76,7 +76,7 @@
 // const ans = arr.pop()                 //delete at last   // return removed element
 // const ans = arr.shift()               //delete at start   //return removed element
 // const ans = arr.splice(3,2)              //delete at specific index, return array of removed elements
-// const ans = arr.splice(2,3)  
+// const ans = arr.splice(2,2)  
 
 // add
 // const ans= arr.push(999);              // add at last    // return lenth of array
@@ -85,6 +85,15 @@
                                         
 
 // console.log(arr ,ans);               /// both mate chhe delete and add mate
+
+
+
+
+
+
+
+
+
 
 
 
@@ -114,7 +123,7 @@
 // const ans = arr.slice(2 ,4);     //return :- je value tme removed karavi chhe te bija variable ma add thai jashe 
 // const ans = arr.slice(-3);
 
-// console.log(arr ,ans);
+// console.log(arr ,ans);   
 
 
 ///////////////////////////////////////////////////////////////
@@ -128,7 +137,9 @@
 //     return x+10;
 // }
 
-// console.log(ans);
+// console.log(ans);  	//The results of a function for each array element. new array ma value je tme mut ke karavi e kari aape
+                        // return ma 10 plus karavi ya chhe te aad thai ne all value malshe 
+
 
 
 ////////////////////////////////////////////////////////////////
@@ -137,7 +148,7 @@
 // filter()
 
 // let ages = [10 ,2,30,40,50]
-// const ans =ages.filter((v) => v>18
+// const ans =ages.filter((v) => v>18)
 // console.log(ans);     // ans filter ni condition ma je pass thashe te badhi value ne new add ma add karavi deshe mean return karshe
 
 
@@ -151,7 +162,9 @@
 //     return j1+j2
 // })
 
-// console.log(adds);
+// console.log(add,adds);    // je return ma work karavyu hoi e na add,mul,
+                           //A value to be passed to the function as the initial value.
+
 
 
 ///////////////////////////////////////////////////////////////
@@ -168,9 +181,10 @@
 
 //lastindexOf()
 
-// let cloth = [ "dres" , "kurta" ,"plaza", "anarkali" , "plaza" ,"shrara" ,"top" ];
-// const ans =cloth.lastIndexOf("plaza")
-// console.log(ans);
+let cloth = [ "dres" , "kurta" ,"plaza", "anarkali" ,"shrara" ,"top" ];
+const ans =cloth.lastIndexOf("plaza")
+console.log(ans);
+                             //// return last occurence index
 
 
 //////////////////////////////////////////////////////////////////
@@ -179,7 +193,7 @@
 
 // let sub = [80,90,89,85,99,89]
 // const ans =sub.every((v) => v >=80);
-// console.log(ans);
+// console.log(ans);   // all value jya suthi condition ma pas nai thai tya sudi false return karshe 
 
 
 ///////////////////////////////////////////////////////////////////
@@ -199,7 +213,7 @@
 
 // let fruit= ["mango" , "peru" ,"apple "];
 // fruit.fill("banana");
-// console.log(fruit);
+// console.log(fruit);  //je name ke number ne fill karavyu te all value ne replace kari aape chhe 
 
 ////////////////////////////////////////////////////////////////
 
@@ -220,7 +234,79 @@
 
 
 
-////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr = [2,5,10,15,20];
+// const ans = arr.push(25);
+// console.log(arr ,ans);
+
+
+// let arr =[ "janvi" , "mansi" , "bhumi"];
+// const ans= arr.unshift("amisha")
+// console.log(arr ,ans);
+
+
+// let arr =["kavya" ,"pari" ,"nensi" ,"sanvi"];
+// const ans= arr.splice(2,0,"parini")
+// console.log(arr ,ans);
+
+
+// let arr = [10,20,30,40,50,60]
+// const ans =arr.pop();
+// console.log(arr ,ans);
+
+
+// let arr =[5,100,200,300,400,500];
+// const ans=arr.shift();
+// console.log(arr ,ans);
+
+
+// let arr = ['rohan' , "sharik" ,"mayank" ,"mihir"];
+// const ans =arr.splice(1,2);
+// console.log(arr ,ans);
+
+
+
+
+//slice
+
+// let arr =[10,20,30,40,50,60,70];
+// const ans=arr.slice(3,6);
+// console.log(arr ,ans);
+
+
+
+// map
+
+// let arr = [5,10,15,20,25,60,80];
+
+
+// arr.map((v,i) => {
+//     console.log(v,i);
+    
+// })
+
+
+//filter 
+
+// let arr=[10,20,30,40,50,60]
+// const ans=arr.filter((age) => {
+//     console.log(age>20);
+    
+// })
+
 
 
 
