@@ -468,16 +468,16 @@
 
 //  but jo number hoi to number na first letter thi jova nu shru karshe so 
 
-  let arr = [10,20,30,60,89,999];
+  // let arr = [10,20,30,60,89,999];
   
 //   const ans=arr.sort((a,b) => a+b);
 //   const ans=arr.sort((a,b) => a-b);
-  const ans=arr.sort((b,a) => b-a);
+  // const ans=arr.sort((b,a) => b-a);
 
 // sort na use ma jyare number valo array hoi tyare ganatari 
 // kari ne samajvu k kai rite ans aaviyo 
 
-  console.log(ans);
+  // console.log(ans);
 
 
 // /////////////////////////////////////////////////////
