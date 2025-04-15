@@ -258,14 +258,144 @@
  
 // let n=parseInt(prompt("please enter element "))
 
-let arr=[10,60,40]
+// let arr=[10,60,40]
 
-let ans = arr.sort((a, b) => a - b);
+// let ans = arr.sort((a, b) => a - b);
 
-let = n;
-let index= Math.floor(n/2);
+// let = n;
+// let index= Math.floor(n/2);
 
 
-console.log(index);
+// console.log(index);
+
+
+// *************************************************** 
+
+// // 16.    Checking if two arrays are equal or not. 
+
+// let arr=[10,20,30];
+
+// let arr1=[10,20,30];
+
+// if(arr.length === arr1.length) {
+//     return true;
+// } else {
+//     return false;
+// }
+
+
+// console.log(arr, arr1);
+
+// function arrfunction(arr,arr1) {
+//     if (arr.length !== arr1.length) {
+//         return false;
+//     } else {
+//         for (let i=0; i<arr.length; i++) {
+//             if (arr[i] !== arr1[i]) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
+
+// console.log(arrfunction(arr2, arr3));
+
+
+
+// ************************************************ 
+
+// 17 Finding the index of the first occurrence of an element in an array. 
+
+
+// let arr=[1,10,100,1000,10000];
+
+// let ans=arr.indexOf(1000);
+
+// console.log(ans);
+
+
+// ******************************************************** 
+
+
+// 18 Finding the index of the last occurrence of an element in an array. 
+
+// let arr=[50,100,150,200,250,150,300];
+
+// let ans=arr.lastIndexOf(150);
+
+// console.log(ans);
+
+
+// ************************************************************* 
+
+// 19 Removing all occurrences of an element from an array. 
+
+// let arr=[10,20,25,30,25,25,40,35,25];
+
+// let ans=arr.filter(v => v !== 25);
+
+// console.log(ans);
+
+
+// **************************************************************** 
+
+// 20  Replacing all occurrences of an element in an array with a new element.
+
+// let arr = [5,10,11,15,11,25,30,11];
+
+// let ans=arr.map(v => v === 11 ? 99 : v); 
+
+// console.log(ans);
+
+
+// ****************************************************************** 
+
+
+  //21 .Creating a new array with the elements of the original array
+  //  in reverse order, without modifying the original array.
+
+//   let arr=[5,10,15,20,25,30];
+
+//   let ans=arr.slice().reverse();
+
+//   console.log(arr,ans);
+
+// ************************************************************************** 
+
+//22.    Checking if an array is sorted in ascending order.
+
+// let arr=[5,10,15,20,25,30];
+
+// let ans=arr.every((v,i) => {
+//     return i === 0 || arr[i- 1] <= v;
+// })
+
+// console.log(ans); 
+    
+
+
+// **************************************************************************** 
+
+// 23.    Checking if an array is sorted in descending order.
+
+// let arr=[100,95,90,85,80,75,70,65,60];
+
+// let ans=arr.every((v,i) => {
+//     return arr[i-1] <= v;
+
+// })
+
+// console.log(ans);
+
+
+
+
+
+
+
+
+
+
 
 
