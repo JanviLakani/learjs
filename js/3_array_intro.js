@@ -124,11 +124,11 @@
 
 // 1 slice()  
 
-// let arr= ["janvi" ,"nijal","bansi" ,"pinal" ,"radhi"]
-// const ans = arr.slice(2 ,4);     //return :- je value tme removed karavi chhe te bija variable ma add thai jashe 
+let arr= ["janvi" ,"nijal","bansi" ,"pinal" ,"radhi"]
+const ans = arr.slice(2,3);     //return :- je value tme removed karavi chhe te bija variable ma add thai jashe 
 // const ans = arr.slice(-3);
 
-// console.log(arr ,ans);   
+console.log(arr ,ans);   
 
 
 ///////////////////////////////////////////////////////////////

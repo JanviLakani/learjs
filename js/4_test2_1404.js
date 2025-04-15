@@ -35,6 +35,9 @@ function handleonsubmit() {
 
   let ans = arr.push(dailyruti);
 
+  document.getElementById("").value;
+
+
   console.log(arr, ans);
 
   
