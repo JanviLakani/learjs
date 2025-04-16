@@ -1,20 +1,75 @@
 // 1.    Finding the maximum element in an array.
 
+// ##################### H.W ################### 
+
 // let arr = [10,20,30,98,59,999,99,58];
 
 // let ans=Math.max(10,20,30,98,59,999,99,58);
 
 // console.log(arr,ans);
 
+// ##################### class ################### 1
+
+// let arr = [10,20,30,98,59,999,99,58];
+
+// console.log(arr);
+
+// let ans=arr[0];
+
+// for (i=1; i<arr.length; i++) {
+//   if (arr[i]>ans)
+//     ans=arr[i]
+// }
+
+// console.log(ans);
+
+
+// ##################### class ################### 2
+
+
+// let arr = [10,20,30,98,59,999,99,58];
+// let ans=arr[0];
+// arr.map((v,i) => {
+//   if(arr[i]>ans){
+//     ans=arr[i];
+//   }
+// })
+
+// console.log(ans);
+
+
+
+
+
 // **************************************************
 
+
 // 2.    Finding the minimum element in an array.
+
+
+// ##################### H.W ################### 
 
 // let arr = [10,20,30,98,59,999,99,58];
 
 // let ans=Math.min(10,20,30,98,59,999,99,58);
 
 // console.log(arr,ans);
+
+// ##################### class ################### 
+
+
+// let arr = [10,20,30,98,59,999,99,58];
+
+// console.log(arr);
+
+// let ans=arr[0];
+
+// for (i=1; i<arr.length; i++) {
+//   if (arr[i]<ans)
+//     ans=arr[i]
+// }
+
+// console.log(ans);
 
 // **********************************************************
 
@@ -83,12 +138,25 @@
 
 // ******************************************************
 
-// 9. Removing duplicates from an array.
-
 // let arr=[10,20,10,40,30,99,100,99 ,40];
 // let addarr = [];
 // let ans=arr.includes()
 // console.log(ans);
+
+// 9. Removing duplicates from an array.
+
+// let arr=[10,20,10,40,30,99,100,99 ,40]; /// removing all repeet element in array 
+// let addarr = [];
+// arr.map((v,i) => {
+//   if (!addarr.includes(v)) {
+//       addarr.push(v);
+//   }
+// })
+
+// console.log(addarr);
+
+
+// ******************************************************** 
 
 // 10.    Merging two arrays into a new array.
 
@@ -98,6 +166,20 @@
 // let ans =arr1.concat(arr1);
 
 // console.log(ans);
+
+// ############## class ##################### 
+
+let arr = [10,20,45,60,78,90,52];
+
+let arr1= [-1 , "janvi" ,99 ,45,98,"sanvi"];
+
+console.log(arr.arr1);
+
+let ans=arr.concat(arr1);
+
+console.log(ans);
+
+
 
 // *************************************************************
 
@@ -289,6 +371,36 @@
 
 // console.log(ans);
 
+/// class ///
+
+// let arr =[5,10,15];
+// let arr1=[5,10,15];
+
+// let ans =arr.toString ? arr1.toString : console.log() ;
+
+
+//*******/ class
+
+// let arr =[5,10,15];
+// let arr1=[5,10,15];
+
+//  let ans=true
+// if (arr.length !== arr1.length) {
+//   ans=false
+// } else {
+//   arr.every((v,i) => v !== arr[i])
+//   ans=false
+// }
+
+
+// console.log(ans);
+
+/////wrong chhe /////
+
+
+
+
+
 
 // ______________________________________________________ 
 
@@ -353,12 +465,30 @@
 
 // 17 Finding the index of the first occurrence of an element in an array. 
 
-
 // let arr=[1,10,100,1000,10000];
 
 // let ans=arr.indexOf(1000);
 
 // console.log(ans);
+
+
+/// class ///
+
+
+// let n=parseInt(prompt("please enter n value : "));
+
+// let arr=[1,10,100,1000,10000];
+
+
+// index = -1;
+// let ans=arr.forEach((v,i) => {
+//   if (v === n && index === -1) {
+//     index=i;  
+//   }
+
+// })
+
+// console.log(ans);  // not done 
 
 
 // ******************************************************** 
@@ -418,6 +548,29 @@
 // })
 
 // console.log(ans); 
+
+// _______________________________________________________________________________ 
+
+/// class /// 
+
+// let arr= [4,8,12,16];  // bni shke to statik na levi niche array aaviyo e pramane lai shkai 
+
+// let arr=[67,45,30,99,30]
+
+// let ans=arr.slice().sort((a,b) => a-b );     // option 1   //  not, ascending order
+
+// let ans=arr.sort((a,b) => a-b );         // option 2   //  yes, ascending order
+
+// if (arr === ans) {
+//   console.log("yes, ascending order");
+  
+// } else {
+//   console.log("not, ascending order");
+  
+// }
+
+// console.log(arr,ans);
+
     
 
 
@@ -434,6 +587,27 @@
 
 // console.log(ans);
 
+// ___________________________________________________________________ 
+
+
+/// class ///
+
+// let arr=[67,45,30,99,30]
+
+// let ans=arr.slice().sort((a,b) => b-a);
+
+// if (arr === ans) {
+//   console.log("yes, descending order");
+  
+// } else {
+//   console.log("not, descending order");
+  
+// }
+
+// console.log(arr,ans);
+
+
+
 // ********************************************************************************* 
 
  //24. Finding the first three maximum number's sum an array.
@@ -445,8 +619,22 @@
 //  let sum=ans[0]+ans[1]+ans[2];
 
 //  console.log(arr,ans,sum);
- 
 
+// _____________________________________________________________________ 
+
+/// class ///
+
+// let n=prompt("please enter n element : ");
+
+// let arr=[10,60,50,70,30,20];  //[70,60,50,30,20,10]
+
+// let ans=arr.sort((a,b) => b-a)
+//            .slice(0,n)
+//            .reduce((acc,v,i) => acc+v ,0)
+
+// console.log(ans);
+
+//  *******************************************************************
 
 
 
