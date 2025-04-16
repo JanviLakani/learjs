@@ -271,11 +271,57 @@
 
 // *************************************************** 
 
+
+
+
+
+
+
+
+
 // // 16.    Checking if two arrays are equal or not. 
 
 // let arr=[10,20,30];
 
 // let arr1=[10,20,30];
+
+// let ans = arr.length === arr1.length && arr.every((value,index) => value === arr1[index])
+
+// console.log(ans);
+
+
+// ______________________________________________________ 
+
+// for loop 
+
+// let arr=[10,20,100];
+// let arr1=[10,20,100];
+
+// let ans=true;
+
+// if (arr.length !== arr1.length) {
+//   ans=false;
+// } else {
+//   for (let i=0; i< arr.length; i++) {
+//     if (arr[i] !== arr1[i]) {
+//       ans=false
+//     }
+//   }
+// }
+
+
+
+// console.log(ans);
+
+
+
+
+
+
+
+
+
+// ____________________________________________________ 
 
 // if(arr.length === arr1.length) {
 //     return true;
@@ -299,7 +345,7 @@
 //     }
 // }
 
-// console.log(arrfunction(arr2, arr3));
+// console.log(arrfunction(arr, arr1));
 
 
 
@@ -367,8 +413,8 @@
 
 // let arr=[5,10,15,20,25,30];
 
-// let ans=arr.every((v,i) => {
-//     return i === 0 || arr[i- 1] <= v;
+// let ans=arr.every((value,index) => {
+//     return index === 0 || arr[index- 1] <= value;
 // })
 
 // console.log(ans); 
@@ -382,11 +428,24 @@
 // let arr=[100,95,90,85,80,75,70,65,60];
 
 // let ans=arr.every((v,i) => {
-//     return arr[i-1] <= v;
+//     return i === 0 || arr[i-1] >= v;
 
 // })
 
 // console.log(ans);
+
+// ********************************************************************************* 
+
+ //24. Finding the first three maximum number's sum an array.
+
+//  let arr=[10,60,50,70,30,20];
+
+//  let ans=arr.slice().sort((a,b) => b-a)
+
+//  let sum=ans[0]+ans[1]+ans[2];
+
+//  console.log(arr,ans,sum);
+ 
 
 
 
