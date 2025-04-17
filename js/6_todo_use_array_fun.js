@@ -1,4 +1,5 @@
 
+let newtodo =[];
 function handleonsubmit() {
 
 
@@ -22,6 +23,11 @@ if (todoname === "") {
         document.getElementById("nameerror").innerHTML="please enter valid todo";
     }
 }
+
+
+let ans=newtodo.push(todoname);
+
+console.log(ans);
 
 
 }

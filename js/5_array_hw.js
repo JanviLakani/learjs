@@ -169,15 +169,15 @@
 
 // ############## class ##################### 
 
-let arr = [10,20,45,60,78,90,52];
+// let arr = [10,20,45,60,78,90,52];
 
-let arr1= [-1 , "janvi" ,99 ,45,98,"sanvi"];
+// let arr1= [-1 , "janvi" ,99 ,45,98,"sanvi"];
 
-console.log(arr.arr1);
+// console.log(arr.arr1);
 
-let ans=arr.concat(arr1);
+// let ans=arr.concat(arr1);
 
-console.log(ans);
+// console.log(ans);
 
 
 
@@ -332,6 +332,25 @@ console.log(ans);
 // }
 
 
+// let arr=[2,3,4,6,5,1]; // 1,2,3,4,5,6
+
+// let arr=[5,2,1,8]; // 1,2,5,8;
+
+// let ans=arr.sort((a,b) => a - b);
+
+// const index = Math.floor(arr.length / 2);
+
+// if (arr.length % 2 === 0) {
+//   let z=(ans[index] + ans [index-1]) /2;
+
+//   console.log(z);
+  
+// } else {
+//   console.log(ans[index]);
+  
+// }
+
+
 
 // ********************************************************************** 
 
@@ -361,11 +380,25 @@ console.log(ans);
 
 
 
-// // 16.    Checking if two arrays are equal or not. 
+// // 16.    Checking if two arrays are equal or not.
 
 // let arr=[10,20,30];
 
 // let arr1=[10,20,30];
+
+// const ans=arr.every((v,i) => v === arr[i]);
+
+// console.log(ans);
+
+
+
+// ################################################# 
+
+// let arr=[10,20,30];
+
+// let arr1=[10,20,30];
+
+
 
 // let ans = arr.length === arr1.length && arr.every((value,index) => value === arr1[index])
 
@@ -473,6 +506,28 @@ console.log(ans);
 
 
 /// class ///
+
+// #################################################### 
+
+// / Finding the index of the first occurrence of an element in an array. 
+
+// let arr =[10,20,30,25,50];
+
+// let n=parseInt(prompt("please enter value"));
+
+// let index= -1;
+
+// arr.forEach((v,i) => {
+//   if ( v === n && index === -1) {
+//     index=i
+//   }
+// })
+
+
+// console.log(index);
+
+
+// #################################################### 
 
 
 // let n=parseInt(prompt("please enter n value : "));
