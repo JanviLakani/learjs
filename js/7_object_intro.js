@@ -1,9 +1,7 @@
-
-
 // let obj = new Object()
 // console.log(obj);
 
-// ******************************** 
+// ********************************
 
 // let obj={
 //     fname : "janvi",
@@ -14,7 +12,7 @@
 // delete obj.lname;
 // console.log(obj);
 
-// ******************************** 
+// ********************************
 
 // const car={
 //     type : "i20",
@@ -24,22 +22,13 @@
 
 // console.log(car);
 
-// ***************************** 
+// *****************************
 
-
-
-  
-
-
-                        
-
-// object creat 
+// object creat
 
 // using Object literal
 // ES6
 // CONTRUCTOR FUNCTION
-
-
 
 // let obj=Object.create=({
 //     fname: "pinal",
@@ -55,18 +44,15 @@
 
 // console.log(obj);
 
-
 // ***********************************
 
 // CONTRUCTOR FUNCTION
-
 
 // function User() {
 
 // }
 
-
-// ******************************************************* add 
+// ******************************************************* add
 
 // var fees = {
 //     rahul : 100,
@@ -81,10 +67,9 @@
 
 // console.log(fees);
 
+//  ***********************************************************
 
-//  *********************************************************** 
-
-//  class 
+//  class
 
 // let arr = [10,20,30];  // array
 
@@ -97,34 +82,26 @@
 
 // console.log(obj);
 
-
-
-// get 
+// get
 
 // for ( let k in obj) {        // all key get karva mate for in k use karvu
 //     console.log(k, obj[k]);
-    
-// }
 
+// }
 
 // add
 
 // obj.city = "surat";
 
-
-
 // obj["city2"]="vapi";
 
 // console.log(city2);
 
-
-// get 
+// get
 
 // console.log(obj.age, obj["age"]);
 
-
-
-// // update 
+// // update
 
 // obj.age=99;
 
@@ -134,8 +111,7 @@
 
 // ******************************* 1
 
-// object assignment 
-
+// object assignment
 
 // const person = {
 //     name: "amit",
@@ -160,17 +136,14 @@
 // person.map((v,i) =>{
 //     console.log(v,v.name, v.age);
 //     // console.log(v);
-    
+
 //     // console.log(v, person.v);
-    
-    
+
 // })
-
-
 
 // ********** 3
 
-// const person = [    
+// const person = [
 //     {
 //         name: "Amit",
 //        age: 25,
@@ -180,7 +153,7 @@
 //            "html"
 //        ]
 //     },
-    
+
 //     {
 //         name: "Ami",
 //        age: 22,
@@ -189,19 +162,17 @@
 //            "java"
 //        ]
 //     }
-// ]  
-
+// ]
 
 // person.map((v,i) => {
 //     console.log(v.name, v.age,);
 //     v.course.map((v1,i1) => {
 //         console.log(v1);
-        
+
 //     })
 // })
 
-// ************************************ 4 
-
+// ************************************ 4
 
 // const myObj = {
 //     name:"jd",
@@ -216,22 +187,98 @@
 // for (let k in myObj) {
 
 //     // console.log(k, myObj[k]);
-    
-//     if (cars === myObj) {
-//         console.log(j, myObj[j]);
-        
+
+//     if (k === "cars") {
+//         console.log(k, myObj[k]);
+
+//         for (let p in myObj[k]) {
+//             console.log(p,myObj[k][p]);
+
+//         }
+
 //     } else {
 //         console.log(k, myObj[k]);
 //     }
-
 
 // }
 
 // console.log(myObj);
 
+// ***************************************** 5
+
+// const person = [
+//   {
+//     name: "amit",
+//     age: 19,
+//     course: {
+//       c1: "c",
+//       c2: "html",
+//     },
+//   },
+//   {
+//     name: "mayur",
+//     age: 20,
+//     course: {
+//       c1: "c",
+//       c2: "html",
+//     },
+//   },
+// ];
+
+// person.map((v, i) => {
+//   console.log(v.name, v.age, v.course);
+// //   v.course.map((v1, i1) => {
+// //     console.log(v1);
+// //   });
+
+// for (j in v.course) {
+//     console.log(j,v.course);
+    
+// }
 
 
+// });
+
+// ************************************ 6 
 
 
+// let data = {
+//     personal_info: {
+//         name: 'amit',
+//         age: 25,
+//         city: 'surat'
+//     },
+//     courses: ["C", "JavaScript", "React"],
+//     branches: {
+//         b1: {
+//             admission: 50,
+//             vacant_seat: 10
+//         },
+//         b2: {
+//             admission: 30,
+//             vacant_seat: 20
+//         },
+//         b3: {
+//             admission: 25,
+//             vacant_seat: 25
+//         },
+//         b4: {
+//             admission: 40,
+//             vacant_seat : 10
+//         }
+//     }
+// }
 
+// for (let k in data) {
+//     console.log( data[k]);
 
+//     if (k === "personal_info") {
+//         console.log(data[k].name ,data[k].age ,data[k].city);   
+//     } else if ( k === "courses") {
+//         data[k].map((v,i)=>{
+//             console.log(v.);
+            
+//         })
+//     }
+    
+// }
