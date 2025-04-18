@@ -22,7 +22,7 @@ function handleedit(i) {
     console.log(i,newtodo[i])
 
     document.getElementById("name").value=newtodo[i];
-    
+    update=i;
 }
 
 
@@ -72,11 +72,12 @@ function handleonsubmit() {
     if (update === null) {
         newtodo.push(todoname);
     } else {
-        newtodo(update);
+        newtodo[update] =todoname;
         update=null
     }
 
 
+    document.getElementById("name").value="";
  
     display();
 
