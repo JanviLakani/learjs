@@ -51,8 +51,7 @@ const submittodo = () => {
 
     // console.log(todoarray);
 
-    if (update === null) {
-      //1
+    if (update === null) {          // 1
       todoarray.push(valueget);
     } else {
       todoarray[update] = valueget;
@@ -62,4 +61,25 @@ const submittodo = () => {
   showtodo();
 
   document.getElementById("todo").value = ""; // 2
+
+
+
 };
+
+// let arr=[10,78,30];
+
+// let ans = arr.sort((a, b) => a - b);
+
+// console.log(ans);
+
+// let optchange = () => {
+//     todoarray.sort(valueget)
+
+//     showtodo();
+// }
+
+// const onclickfunction = () => {
+
+// }
+
+

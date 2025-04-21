@@ -239,46 +239,155 @@
 
 // });
 
+// ************* home 
+
+// const person =[
+//     {
+//         name:"amit",
+//         age:19,
+//         course:{
+//             c1: "c",
+//             c2: "html"
+//         }
+//     },
+//     {
+//         name:"mayur",
+//         age:20,
+//         course:{
+//             c1: "c",
+//             c2: "html",
+//         }
+//     }
+// ];
+
+// person.map((pdata) => {
+
+//     console.log(pdata.name ,pdata.age , pdata.course);
+
+
+//     for (let k in pdata.course) {
+//         console.log(pdata.course[k]);
+        
+//     }
+
+// })
+
 // ************************************ 6 
 
 
-// let data = {
-//     personal_info: {
-//         name: 'amit',
-//         age: 25,
-//         city: 'surat'
-//     },
-//     courses: ["C", "JavaScript", "React"],
-//     branches: {
-//         b1: {
-//             admission: 50,
-//             vacant_seat: 10
-//         },
-//         b2: {
-//             admission: 30,
-//             vacant_seat: 20
-//         },
-//         b3: {
-//             admission: 25,
-//             vacant_seat: 25
-//         },
-//         b4: {
-//             admission: 40,
-//             vacant_seat : 10
-//         }
-//     }
-// }
+let data = {
+    personal_info: {
+        name: 'amit',
+        age: 25,
+        city: 'surat'
+    },
+    courses: ["C", "JavaScript", "React"],
+    branches: {
+        b1: {
+            admission: 50,
+            vacant_seat: 10
+        },
+        b2: {
+            admission: 30,
+            vacant_seat: 20
+        },
+        b3: {
+            admission: 25,
+            vacant_seat: 25
+        },
+        b4: {
+            admission: 40,
+            vacant_seat : 10
+        }
+    }
+}
 
-// for (let k in data) {
-//     console.log( data[k]);
 
-//     if (k === "personal_info") {
-//         console.log(data[k].name ,data[k].age ,data[k].city);   
-//     } else if ( k === "courses") {
-//         data[k].map((v,i)=>{
-//             console.log(v.);
+
+for (let k in data) {
+    console.log(data[k]);
+
+
+    if (k === "personal_info") {
+        console.log(data[k].name ,data[k].age , data[k].city);
+        
+    } else if (k === "courses" ) {
+        data[k].map((lang) => {
+            console.log(lang);
             
-//         })
-//     }
+        })
+    } else if (k === "branches") {
+        for (let j in data[k]) {
+            console.log(data[k][j]);
+            for (let z in (data[k][j]) ) {
+                console.log((data[k][j][z]));
+                
+            }
+        }
+    }
     
-// }
+}
+
+
+// ****************************************** 7 
+
+
+// let institues = [
+//     {
+//         name: 'ABC IT Institute',
+//         seat: [
+//             {
+//                 react: 15,
+//                 node: 20,
+//                 full_stack: 10,
+//                 ui_ux: 0
+//             },
+//         ]
+//     },
+//     {
+//         name: 'XYZ IT Institute',
+//         seat: [
+//             {
+//                 react: 0,
+//                 node: 70,
+//                 full_stack: 0,
+//                 ui_ux: 10
+//             },
+//         ]
+//     },
+//     {
+//         name: 'PQR IT Institute',
+//         seat: [
+//             {
+//                 react: 7,
+//                 node: 0,
+//                 full_stack: 0,
+//                 ui_ux: 0
+//             },
+//         ]
+//     },
+//     {
+//         name: 'MNP IT Institute',
+//         seat: [
+//             {
+//                 react: 880,
+//                 node: 0,
+//                 full_stack: 0,
+//                 ui_ux: 0
+//             },
+//         ]
+//     }
+// ]
+ 
+
+// institues.map((course) => {
+//     console.log(course.name);
+
+//     course.seat.map((v) =>{
+//         console.log(v.react , v.node ,v.full_stack, v.ui_ux);
+        
+//     })
+
+
+// })
+
