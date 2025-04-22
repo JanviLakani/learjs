@@ -3,14 +3,72 @@ let todoarray = [];
 
 update=null;
 
-// ********************************************************** select  
-    const handlechangr = () => {
-        let selvalue=document.getElementById("selectlor").value;
-        
-        console.log(selvalue);
-        
+// ***************************************************************  
+// mix function for sort and search
 
+const searchsorthandle = () => {
+
+    let val=document.getElementById("search").value;
+    let valuesort=document.getElementById("sort").value;  
+
+    console.log(val,valuesort);
+
+    let vval=todoarray.filter((v,i) => v.toLowerCase().includes(val.toLowerCase()))
+
+    console.log(vval);
+    
+
+    if (valuesort === 'az') {
+        vval=vval.sort();
+    } else {
+        vval=vval.sort().reverse();
     }
+
+    console.log(vval);
+    
+
+    showdata(vval);
+
+}
+
+// ************************************************************ sort 
+
+// const sorthandle = ()=> {
+
+//   let valuesort=document.getElementById("sort").value;  //2
+
+//   console.log(todoarray,valuesort);
+
+// //   todoarray.sort();
+
+//     let ssvalue=[];              //4
+//   if (valuesort === 'az') {
+//     ssvalue=todoarray.sort();
+//   } else {
+//     ssvalue=todoarray.sort().reverse();
+//   }
+  
+//   showdata();
+
+// }
+
+// ********************************************************** search
+
+    // const searchhandle = () => {
+    //     let val=document.getElementById("search").value; //1
+        
+    //     console.log(todoarray,val);
+        
+        
+   
+    //     const vval=todoarray.filter((v,i) => v.toLowerCase().includes(val.toLowerCase())) //3
+
+    //     console.log(vval);
+
+
+    //     showdata(vval);
+
+    // }
 
 
 // ******************************************************* editbtn 
@@ -37,17 +95,43 @@ const deletebtn = (deleteindex) => {
 
 
 // ******************************************************* display 
-const showdata = () =>{
+const showdata = (vval=[]) =>{
 
-    let print = ``;
+    if (vval.length === 0) {
 
-    todoarray.map((v,i)=> {
-        print += `<li>${v}<button onclick="deletebtn(${i})">x</button>
-                        <button onclick="editbtn(${i})">edit</button>
-        </li>`
-    })
+        let print = ``;
 
-    document.getElementById("disk").innerHTML=print;
+        todoarray.map((v,i)=> {
+            print += `<li>${v}<button onclick="deletebtn(${i})">x</button>
+                            <button onclick="editbtn(${i})">edit</button>
+            </li>`
+           
+        })
+        document.getElementById("disk").innerHTML=print;
+
+
+    } else {
+        let print = ``;
+
+        vval.map((v,i)=> {
+            print += `<li>${v}<button onclick="deletebtn(${i})">x</button>
+                            <button onclick="editbtn(${i})">edit</button>
+            </li>`
+        })
+        
+        document.getElementById("disk").innerHTML=print;
+
+    }
+
+    // let print = ``;
+
+    // todoarray.map((v,i)=> {
+    //     print += `<li>${v}<button onclick="deletebtn(${i})">x</button>
+    //                     <button onclick="editbtn(${i})">edit</button>
+    //     </li>`
+    // })
+
+    // document.getElementById("disk").innerHTML=print;
 
 }
 

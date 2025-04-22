@@ -21,14 +21,30 @@
 
     <ul id="disk"></ul>
 
-    <select name="" id="selectlor" onchange="handlechangr()">
+    <!-- <select name="" id="selectlor" onchange="handlechangr()">
         <option value="0">--select--</option>
         <option value="janu">janvi</option>
         <option value="piya">priya</option>
         <option value="kano">sharmik</option>
 
+    </select> -->
+
+    <br><br>
+
+    <!-- <input type="text" name="search" id="search" onkeyup="searchhandle()" placeholder="search"> -->
+    <input type="text" name="search" id="search" onkeyup="searchsorthandle()" placeholder="search">
+
+    <select name="text" id="sort" onchange="searchsorthandle()">
+
+        <option value="0">--sel--</option>
+        <option value="az">a-z</option>
+        <option value="za">z-a</option>
+
+
     </select>
 
+    
+    <br><br>
 
 
     <script src="js/10_todo_search.js"></script>
