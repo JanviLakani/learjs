@@ -279,8 +279,6 @@ if ( ! errorbox) {
         }
     }
 
-
-
         console.log(pctype);
 
         console.log(pcprocessorvalue,pcramvalue,pcmemoryvalue,graphicscardvalue);
@@ -290,11 +288,7 @@ if ( ! errorbox) {
 
         document.getElementById("money").innerHTML=total;
 
-        document.getElementById("type").innerHTML=pctype;
-        
-    
-    
-    
+        document.getElementById("type").innerHTML=pctype;   
 } else{
     console.log("table not print ");
     

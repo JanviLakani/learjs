@@ -117,7 +117,7 @@ function handledate() {
 
 
 
-  document.getElementById("money1").innerHTML = print1;
+  // document.getElementById("money1").innerHTML = print1;
 }
 
 //  ********************************************************************* 

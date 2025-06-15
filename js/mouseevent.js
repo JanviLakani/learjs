@@ -45,11 +45,11 @@
 
 // <!-- **********************   key   ****************************** 2 
 
-// function keydown(){
-//     const janvi =document.getElementById("on").value;
-//     console.log("janvi");
+function keydown(){
+    const janvi =document.getElementById("on").value;
+    console.log("janvi");
     
-// }
+}
 
 // <!-- **************************************************** 2 
 
@@ -149,14 +149,14 @@
 
 // <!-- **************************************************** 2 
 
-function handlesubmit(){
-    event.preventDefault();
-    const a =document.getElementById("focus").value;
-    const b =document.getElementById("Country").value;
-    console.log(a,b);
+// function handlesubmit(){
+//     event.preventDefault();
+//     const a =document.getElementById("focus").value;
+//     const b =document.getElementById("Country").value;
+//     console.log(a,b);
     
       
-}
+// }
 
 // <!-- **************************************************** 2 
 
